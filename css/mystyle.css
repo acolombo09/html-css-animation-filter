@@ -158,8 +158,11 @@
 
 /* Soluzione Esercizio 10 */
 
-
-
+.ex-10-icon {
+    animation: fa-spin;
+    animation-duration: 1.5s; 
+    animation-iteration-count: infinite;
+}
 /* ---------------------- */
 
 .ex-11-icon {
@@ -168,7 +171,20 @@
 
 /* Soluzione Esercizio 11 */
 
-
+.ex-11-icon:hover{
+    animation: spinalternate 3s linear;
+}
+@keyframes spinalternate {
+    0% {
+        transform: rotate(0);
+    }
+    90% {
+        transform: rotate(315deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
 
 /* ---------------------- */
 
